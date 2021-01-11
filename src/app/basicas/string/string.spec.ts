@@ -8,5 +8,11 @@ describe('Pruebas de Strings',()=>{
         const resp = mensaje('Jorge');
         expect(typeof resp).toBe('string')
     });
+
+    it('Debe de retornar un saludo con el nombre enviado',()=>{
+        const nombre ="Jorge"
+        const resp = mensaje(nombre);
+        expect(resp).toContain(nombre)
+    });
 });
 
