@@ -1,0 +1,9 @@
+import { usuarioIngresado } from "./booleanos"
+
+describe('Pruebas de Booleanos',()=>{
+    it('Debe de retornar true',()=>{
+        const res = usuarioIngresado();
+        expect(res).toBeTruthy();
+        // Si esperas que la respuesta sea falsa usar toBeFalsy() or not.toBeTruthy();
+    })
+})
