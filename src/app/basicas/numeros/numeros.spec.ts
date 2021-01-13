@@ -1,6 +1,6 @@
 import { incrementar } from "./numeros"
 
-describe('Pruebas de números',()=>{
+xdescribe('Pruebas de números',()=>{
 
     it('Debe retornar 100 si el número ingresado es mayor a 100',()=>{
         const res = incrementar(300);
