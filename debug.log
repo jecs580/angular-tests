@@ -2,3 +2,5 @@
 [0110/235004.915:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
 [0112/224624.496:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
 [0114/232803.362:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[0115/001819.431:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\usuario\AppData\Local\Temp\karma-80849918\Crashpad\attachments\f5f505e5-dddc-4a69-a47e-1ffeb49cd088: El sistema no puede encontrar la ruta especificada. (0x3)
+[0114/232338.887:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
