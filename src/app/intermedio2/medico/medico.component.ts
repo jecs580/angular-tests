@@ -1,3 +1,4 @@
+import { MedicoService } from './medico.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,12 +8,18 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class MedicoComponent implements OnInit {
-
-  constructor() { }
+  medicos:any[]=[];
+  constructor(private medicoService:MedicoService) { }
 
   ngOnInit(): void {
   }
   saludarMedico(nombre:string){
     return `Hola ${nombre}`;
+  }
+
+  obtenerMedicos(){
+    this.medicoService.getMedicos().subscribe(
+      (medicos:any[])=>this.medicos=medicos
+    )
   }
 }
