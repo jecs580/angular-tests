@@ -27,4 +27,20 @@ describe('Incremendator Component', () => {
         expect(elem.innerHTML).toContain('Progreso de carga');
     });
 
+    it('Debe de mostrar en el input el valor del progreso',()=>{
+        component.cambiarValor(5);
+        fixture.detectChanges();
+
+        /*
+        La detectChanges puede demorar un largo tiempo, y puede que angular
+        no logra capturar el nuevo valor, para resolver esto se tiene una funcion
+        'whenStable' que es una promesa cuando exista un cambio y dispara una funcion.
+        */
+        fixture.whenStable().then(()=>{
+            const input = fixture.debugElement.query(By.css('input'));
+            const elem = input.nativeElement;
+            expect(elem.value).toBe('55');
+        })
+        
+    })
 });
